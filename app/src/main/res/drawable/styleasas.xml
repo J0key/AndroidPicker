@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Set the solid color you desire here -->
+    <solid android:color="#E0F4FF" /> <!-- Replace #FF0000 with your desired color code -->
+
+    <corners android:radius="10dp" />
+</shape>

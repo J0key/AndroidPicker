@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgron"
+    tools:context=".activity_four"
+    >
+
+    <TextView
+        android:id="@+id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Tickets Invoice!"
+        android:layout_marginTop="60dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:shadowRadius="15"
+        android:shadowDy="3"
+        android:shadowColor="#7dd3fc"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:layout_below="@id/book"
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"/>
+
+    <EditText
+        android:id="@+id/fill1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/styleasas"
+        android:layout_below="@id/space"
+        />
+
+    <EditText
+        android:id="@+id/fill2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/styleasas"
+        android:layout_below="@id/fill1"
+        />
+
+    <EditText
+        android:id="@+id/fill3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/styleasas"
+        android:layout_below="@id/fill2"
+        />
+
+
+
+
+
+</RelativeLayout>

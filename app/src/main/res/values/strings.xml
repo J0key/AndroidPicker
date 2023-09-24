@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PIcker</string>
+    <array name="ticket">
+        <item>Economy</item>
+        <item>Premium Economy</item>
+        <item>Business</item>
+        <item>First Class</item>
+        <item>Quiet Zone</item>
+    </array>
+    <array name="from">
+        <item>Jakarta</item>
+        <item>Yogyakarta</item>
+        <item>Surabaya</item>
+        <item>Balikpapan</item>
+        <item>Palembang</item>
+    </array>
+    <array name="airline">
+        <item>Air Asia</item>
+        <item>Lion Air</item>
+        <item>Citilink</item>
+        <item>Sriwijaya Air</item>
+        <item>Batik Air</item>
+    </array>
+</resources>

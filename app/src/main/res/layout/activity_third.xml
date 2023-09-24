@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgron"
+    tools:context=".activity_third"
+    >
+
+    <TextView
+        android:id="@+id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Your Tickets!"
+        android:layout_marginTop="60dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:shadowRadius="15"
+        android:shadowDy="3"
+        android:shadowColor="#7dd3fc"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_below="@id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/day"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="90dp"
+        android:elevation="4dp"
+        android:background="@color/black"
+        />
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/day"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space"
+        android:text="Due Date"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginLeft="60dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/date_spin"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cornerRadius="12dp"
+        android:text="Choose Your Date!"
+        android:textColor="@color/black"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@id/date"
+        android:backgroundTint="@color/whitesky"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_spin"
+        android:text=""
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginLeft="60dp"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_spin"
+        android:text="Time"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginLeft="60dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/time_spin"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="60dp"
+        app:cornerRadius="12dp"
+        android:text="Choose Your Time!"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/whitesky"
+        android:layout_marginRight="60dp"
+        android:layout_below="@id/time"
+        />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_spin"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginLeft="60dp"
+        />
+
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_spin"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/button"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_spin"
+        android:layout_toLeftOf="@id/submit_btn"
+        android:backgroundTint="@color/button"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Reset"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>
